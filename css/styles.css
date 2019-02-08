@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 1px; /* some padding */
+    text-align: center; /* center the text */
+    background: #1abc9c; /* green background */
+    color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Column container */
+
+.row {
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: #E5E4E4; /* Dark background color */
+    padding-right: 20px;
+    padding-left: 20px;
+    /*padding: 5px;*/ /* Some padding */
+    color: #0F0E0E; /* Light text color */
+}
+
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, */
+/* make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .header {
+        display: none;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, */
+/* make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .header {
+        display: none;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+.custom-date-time {
+    width: 100%;
+    border-style: none;
+}
+
+.custom-date-time input {
+    background-color: #f2f2f2;
+    color: #0F0E0E;
+    text-align: left;
+    font-size: medium;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a9a9a9;
+}
+
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    background-color: #f2f2f2;
+    color: #0F0E0E;
+    padding: 10px;
+    text-align: left;
+    font-size: medium;
+    width: 100%;
+    height: 40px;
+}
+
+.custom-select label {
+    font-weight: bold;
+}
+
+.custom-btn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a9a9a9;
+    /*border: none;*/ /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    font-size: medium;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.default {
+    background-color: #ddd; color: black;
+}
+.default:hover {background: #a9a9a9;} /* Gray */
+
+.default:disabled {
+    background: #a9a9a9;
+    color: #ddd;
+}
+
+div.dt-buttons {
+    clear: both;
+}
+/*
+table {
+    width: 100%;
+}
+
+th {
+    height: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #0F0E0E;
+}
+
+div.dataTables_wrapper {
+    margin-bottom: 3em;
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+*/

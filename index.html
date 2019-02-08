@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Factory Staff Control</title>
+    <link rel="icon" href="images/stopwatch.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <script src="scripts/pacs_script.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery.dataTables.min.js"></script>
+</head>
+<body onload="initialFunction()">
+    <div class="header">
+        <h1>ЗТТА. Контроль персонала</h1>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <div class="custom-select" style="width:100%;">
+                <p id="dropPeriod">
+                    <label id="periodLabel" for="_dropPeriod">Период</label>
+                    <select id="_dropPeriod"></select>
+                </p>
+                <p id="dropDepartment">
+                    <label id="departmentLabel" for="_dropDepartment">Отдел</label>
+                    <select id="_dropDepartment"></select>
+                </p>
+                <p id="dropEmployee">
+                    <label id="employeeLabel" for="_dropEmployee">Сотрудник</label>
+                    <select id="_dropEmployee"></select>
+                </p>
+                <p id="btnShow">
+                    <button id="_btnShow" class="custom-btn default">Применить</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="main">
+            <p id="showData"></p>
+        </div>
+    </div>
+</body>
+</html>
